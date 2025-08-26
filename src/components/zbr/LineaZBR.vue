@@ -130,7 +130,8 @@ defineExpose({
 
         <div class="space-y-2">
           <label class="block font-medium text-gray-700">Foto de la etiqueta:</label>
-          <input type="file" accept="image/*" @change="handlePhotoChange" ref="fileInput" class="hidden" />
+          <!-- --- CAMBIO AQUÍ: Se añade el atributo 'capture' para activar la cámara --- -->
+          <input type="file" accept="image/*" capture="environment" @change="handlePhotoChange" ref="fileInput" class="hidden" />
           <button @click="triggerFileInput" class="w-full py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">
             Subir foto
           </button>

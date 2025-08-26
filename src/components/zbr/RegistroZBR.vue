@@ -129,8 +129,8 @@ async function generateAndSendPDF() {
 </script>
 
 <template>
-  <!-- --- CAMBIO AQUÍ: Se añade 'pb-24' para dejar espacio al final --- -->
-  <div class="container mx-auto p-4 md:p-8 pb-24">
+  <!-- --- CAMBIO AQUÍ: Se aumenta el padding inferior a 'pb-32' --- -->
+  <div class="container mx-auto p-4 md:p-8 pb-32">
     <div class="mb-6">
       <button @click="$emit('goHome')" class="px-6 py-3 bg-gray-500 text-white font-bold rounded-lg shadow hover:bg-gray-600">
         &larr; Volver atrás
@@ -185,5 +185,4 @@ async function generateAndSendPDF() {
 
     <Comprobador :isValid="isAllValid" />
   </div>
-
 </template>
